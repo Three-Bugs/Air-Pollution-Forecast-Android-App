@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">On Air Pollution</string>
+    <string name="desc">Air Pollution Prediction</string>
+    <string name="current_pollution">Current Pollution</string>
+    <string name="dummy_text">Dummy Text</string>
+    <string name="upcomming_prediction">Upcoming Prediction</string>
 </resources>
