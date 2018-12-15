@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -20,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference databaseReference;
     Spinner selectCity;
     Button btnGoToContribution;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnGoToContribution.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,YourContribution.class));
+                startActivity(new Intent(MainActivity.this, YourContribution.class));
             }
         });
 
@@ -44,8 +44,9 @@ public class MainActivity extends AppCompatActivity {
         cities.add("Pune");
         cities.add("Bengalore");
 
-        ArrayAdapter<String> cityAdapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item,cities);
+        ArrayAdapter<String> cityAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, cities);
         cityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        selectCity.setPrompt("Select your city");
         selectCity.setAdapter(cityAdapter);
     }
 }
