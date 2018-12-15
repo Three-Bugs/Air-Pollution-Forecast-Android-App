@@ -3,5 +3,7 @@
     <string name="desc">Air Pollution Prediction</string>
     <string name="current_pollution">Current Pollution</string>
     <string name="dummy_text">Dummy Text</string>
-    <string name="upcomming_prediction">Upcoming Prediction</string>
+    <string name="upcoming_prediction">Upcoming Prediction</string>
+    <string name="city">City</string>
+    <string name="contribution">Your contribution</string>
 </resources>
