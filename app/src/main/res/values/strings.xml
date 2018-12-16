@@ -14,4 +14,9 @@
     <string name="Friday">Friday</string>
     <string name="saturday">Saturday</string>
     <string name="sunday">Sunday</string>
+
+
+    <!--blog strings -->
+    <string name="line1">The average life expectancy in India would have been 1.7 years higher if the air pollution level were less than the minimal level causing health loss.</string>
+    <string name="line2"> “India has one of the highest annual average ambient particulate matter PM2·5 exposure levels in the world. In 2017, no state in India had an annual population weighted ambient particulate matter mean PM2·5 less than the WHO recommended level of 10 μg/m³, 45 and 77% of India’s population was exposed to mean PM2·5 more than 40 μg/m³, which is the recommended limit set by the National Ambient Air Quality Standards of India,” reads the article in The Lancet Planetary Health. PM 2.5 particles are those that are suspended in air and have a diameter lesser than 2.5 microns. There is a marked variation between the states, with a 12 times difference for ambient particulate matter pollution and 43 times difference for household air pollution. States in north India had some of the highest levels of both ambient particulate matter and household air pollution, especially Bihar, Uttar Pradesh, Rajasthan, and Jharkhand; and the states Delhi, Haryana, and Punjab in north India had some of the highest ambient particulate matter pollution exposure in the country.</string>
 </resources>
