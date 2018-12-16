@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="threebugs.onairpollution">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".YourContribution" />
-        <activity android:name=".informative_blog"></activity>
+        <activity android:name=".informative_blog" />
+        <activity
+            android:name=".public_contributions"
+            android:label="@string/title_activity_public_contributions"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
