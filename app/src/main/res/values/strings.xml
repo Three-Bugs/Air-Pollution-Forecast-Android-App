@@ -1,20 +1,22 @@
 <resources>
-    <string name="app_name">On Air Pollution</string>
+    <string name="app_name">Air Pollution Forecast</string>
     <string name="desc">Air Pollution Prediction</string>
-    <string name="current_pollution">Current Pollution</string>
+    <string name="current_pollution">Current AQI</string>
     <string name="dummy_text">Dummy Text</string>
-    <string name="upcoming_prediction">Upcoming Prediction</string>
+    <string name="upcoming_prediction">AQI Forecast</string>
     <string name="city">City</string>
     <string name="contribution">Your contribution</string>
     <string name="random">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
-    <string name="monday">Monday</string>
-    <string name="tuesday">Tuesday</string>
-    <string name="wednesday">Wednesday</string>
-    <string name="thursday">Thursday</string>
-    <string name="Friday">Friday</string>
-    <string name="saturday">Saturday</string>
-    <string name="sunday">Sunday</string>
+    <string name="monday">Monday - 31/12/2018</string>
+    <string name="tuesday">Tuesday - 01/01/2019</string>
+    <string name="wednesday">Wednesday - 02/01/2019</string>
+    <string name="thursday">Thursday - 03/01/2019</string>
+    <string name="Friday">Friday - 04/01/2019</string>
+    <string name="saturday">Saturday - 05/01/2019</string>
+    <string name="sunday">Sunday - 06/01/2019</string>
 
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
     <!--blog strings -->
     <string name="line1">The average life expectancy in India would have been 1.7 years higher if the air pollution level were less than the minimal level causing health loss.</string>

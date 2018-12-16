@@ -1,9 +1,14 @@
 package threebugs.onairpollution;
 
 import android.content.Intent;
+import android.support.annotation.MainThread;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -36,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     TextView satTextView;
     TextView sunTextView;
     String text = "";
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    ActionBarDrawerToggle actionBarDrawerToggle;
 
 
     @Override
@@ -51,6 +59,48 @@ public class MainActivity extends AppCompatActivity {
         friTextView = findViewById(R.id.tv_fri);
         satTextView = findViewById(R.id.tv_sat);
         sunTextView = findViewById(R.id.tv_sun);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigation_view);
+
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                int id = menuItem.getItemId();
+
+                switch (id) {
+                    case R.id.home:
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.blogs:
+                        startActivity(new Intent(MainActivity.this, informative_blog.class));
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.contributions:
+                        startActivity(new Intent(MainActivity.this,PublicContributions.class));
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.stats:
+                        startActivity(new Intent(MainActivity.this, Stats.class));
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    default:
+                        return true;
+                }
+
+                return false;
+            }
+        });
 
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
 //        DatabaseReference databaseReference2 = firebaseDatabase.getReference("cities");
@@ -197,4 +247,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (actionBarDrawerToggle.onOptionsItemSelected(item))
+            return true;
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
 }

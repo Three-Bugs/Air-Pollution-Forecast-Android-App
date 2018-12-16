@@ -21,10 +21,8 @@
         </activity>
         <activity android:name=".YourContribution" />
         <activity android:name=".informative_blog" />
-        <activity
-            android:name=".public_contributions"
-            android:label="@string/title_activity_public_contributions"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PublicContributions" />
+        <activity android:name=".Stats"></activity>
     </application>
 
 </manifest>
