@@ -1,5 +1,6 @@
 package threebugs.onairpollution;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -10,6 +11,7 @@ public class YourContribution extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_your_contribution);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Your contributions");
 
     }
 
