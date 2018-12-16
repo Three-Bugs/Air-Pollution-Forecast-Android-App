@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".YourContribution"></activity>
+        <activity android:name=".YourContribution" />
+        <activity android:name=".informative_blog"></activity>
     </application>
 
 </manifest>
